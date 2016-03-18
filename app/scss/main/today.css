@@ -1,0 +1,175 @@
+@charset "UTF-8";
+div, html, body, p, ul, li {
+  margin: 0;
+  padding: 0; }
+
+#body-pc-box {
+  margin: auto;
+  height: 568px;
+  width: 320px; }
+
+ul {
+  list-style: none; }
+
+.text-left {
+  text-align: left; }
+
+.text-right {
+  text-align: right; }
+
+.text-center {
+  text-align: center; }
+
+.text-small {
+  transform: scale(0.8);
+  line-height: 1; }
+
+.left {
+  float: left; }
+
+.right {
+  float: right; }
+
+.clf:after {
+  content: " ";
+  display: block;
+  height: 0;
+  visibility: hidden;
+  clear: both; }
+
+.clf {
+  *zoom: 1; }
+
+.none {
+  display: none; }
+
+.hidden {
+  opacity: 0; }
+
+body {
+  background: #1f1e1e url("/img/main/background.png") center center no-repeat;
+  background-size: cover;
+  color: #fff;
+  font-size: 12px;
+  -webkit-font-smoothing: antialiased;
+  line-height: 1.4;
+  font-family: "Helvetica neue",Helvetica,Tahoma,"PingFang SC","lantinghei sc","Microsoft Yahei", sans-serif; }
+
+html, body {
+  height: 100%;
+  width: 100%; }
+
+.line {
+  border-bottom: 1px solid #ddd; }
+
+.circle-wrap {
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: 90%;
+  max-width: 320px;
+  position: absolute;
+  z-index: -1; }
+  .circle-wrap .logo-text {
+    top: 40px;
+    width: 80%;
+    margin-left: 10%;
+    position: absolute; }
+  .circle-wrap .loading {
+    position: absolute;
+    width: 40%;
+    margin-left: 30%;
+    bottom: 30px; }
+  .circle-wrap img {
+    width: 100%; }
+
+.bar-wrap {
+  padding: 10px;
+  position: relative; }
+  .bar-wrap .bar-title {
+    display: inline-block;
+    margin-top: 3px; }
+  .bar-wrap .money-btn {
+    padding: 2px 6px;
+    border-radius: 10px;
+    border: 1px solid #999;
+    cursor: pointer; }
+    .bar-wrap .money-btn:active {
+      background: #999; }
+
+.main {
+  position: relative;
+  height: 100%;
+  overflow: auto; }
+  .main .today-wrap .li-wrap {
+    margin: 0 auto;
+    width: 80%;
+    list-style: none; }
+    .main .today-wrap .li-wrap .item {
+      padding: 10px 0;
+      position: relative;
+      border-bottom: 1px solid #999; }
+      .main .today-wrap .li-wrap .item:first-child {
+        border-top: 1px solid #999; }
+      .main .today-wrap .li-wrap .item.active {
+        border-bottom: 1px solid #ddd; }
+      .main .today-wrap .li-wrap .item .item-text {
+        font-size: 14px; }
+      .main .today-wrap .li-wrap .item .triangle {
+        position: absolute;
+        height: 8px;
+        right: 5px;
+        top: 15px;
+        transition: all ease 0.2s;
+        -webkit-transition: all ease 0.2s; }
+      .main .today-wrap .li-wrap .item.active .triangle {
+        transform: rotate(180deg);
+        -webkit-transform: rotate(180deg);
+        transform-origin: center center;
+        -webkit-transform-origin: center center; }
+      .main .today-wrap .li-wrap .item .rank-wrap {
+        height: 0;
+        overflow: hidden;
+        transition: all ease 0.5s;
+        -webkit-transition: all ease 0.5s; }
+      .main .today-wrap .li-wrap .item.active .rank-wrap {
+        height: auto; }
+  .main .rank-wrap {
+    color: #ccc; }
+    .main .rank-wrap .rank-item {
+      height: 30px;
+      line-height: 30px; }
+      .main .rank-wrap .rank-item .rank-num {
+        padding-left: 10px; }
+      .main .rank-wrap .rank-item .rank-avatar {
+        height: 24px;
+        border-radius: 50%;
+        vertical-align: middle;
+        /*图片垂直居中*/
+        margin: 0 10px; }
+      .main .rank-wrap .rank-item .rank-score {
+        padding-right: 10px; }
+    .main .rank-wrap .rank-more {
+      font-size: 12px;
+      color: #fff; }
+  .main .button-wrap {
+    width: 200px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: auto;
+    bottom: 10px; }
+    .main .button-wrap button {
+      border-radius: 25px;
+      border: 1px solid #999;
+      background: transparent;
+      outline: none;
+      height: 34px;
+      margin-bottom: 8px;
+      width: 150px;
+      color: #fff;
+      cursor: pointer; }
+      .main .button-wrap button:active {
+        background: #999; }
+
+/*# sourceMappingURL=today.css.map */

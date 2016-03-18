@@ -1,2 +1,2 @@
-# qujing.hustonline.local
-校园取经
+#iQGame
+游戏

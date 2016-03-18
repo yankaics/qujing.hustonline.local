@@ -1,0 +1,49 @@
+div,html,body,p,ul,li{
+  margin:0;
+  padding:0;
+}
+#body-pc-box{
+  margin:auto;
+  height:568px;
+  width: 320px;
+}
+ul{
+  list-style: none;
+}
+.text-left{
+  text-align: left;
+}
+.text-right{
+  text-align: right;
+}
+.text-center{
+  text-align: center;
+}
+.text-small{
+  transform: scale(0.8);
+  line-height:1;
+}
+.left{
+  float: left;
+}
+.right{
+  float: right;
+}
+
+.clf:after {
+  content:" ";
+  display:block;
+  height:0;
+  visibility:hidden;
+  clear:both;
+}
+.clf {
+  *zoom:1;
+}
+
+.none{
+  display: none;
+}
+.hidden{
+  opacity: 0;
+}

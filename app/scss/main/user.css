@@ -1,0 +1,172 @@
+div, html, body, p, ul, li {
+  margin: 0;
+  padding: 0; }
+
+#body-pc-box {
+  margin: auto;
+  height: 568px;
+  width: 320px; }
+
+ul {
+  list-style: none; }
+
+.text-left {
+  text-align: left; }
+
+.text-right {
+  text-align: right; }
+
+.text-center {
+  text-align: center; }
+
+.text-small {
+  transform: scale(0.8);
+  line-height: 1; }
+
+.left {
+  float: left; }
+
+.right {
+  float: right; }
+
+.clf:after {
+  content: " ";
+  display: block;
+  height: 0;
+  visibility: hidden;
+  clear: both; }
+
+.clf {
+  *zoom: 1; }
+
+.none {
+  display: none; }
+
+.hidden {
+  opacity: 0; }
+
+body {
+  background: #1f1e1e url("/img/main/background.png") center center no-repeat;
+  background-size: cover;
+  color: #fff;
+  font-size: 12px;
+  -webkit-font-smoothing: antialiased;
+  line-height: 1.4;
+  font-family: "Helvetica neue",Helvetica,Tahoma,"PingFang SC","lantinghei sc","Microsoft Yahei", sans-serif; }
+
+html, body {
+  height: 100%;
+  width: 100%; }
+
+.line {
+  border-bottom: 1px solid #ddd; }
+
+.circle-wrap {
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: 90%;
+  max-width: 320px;
+  position: absolute;
+  z-index: -1; }
+  .circle-wrap .logo-text {
+    top: 40px;
+    width: 80%;
+    margin-left: 10%;
+    position: absolute; }
+  .circle-wrap .loading {
+    position: absolute;
+    width: 40%;
+    margin-left: 30%;
+    bottom: 30px; }
+  .circle-wrap img {
+    width: 100%; }
+
+.bar-wrap {
+  padding: 10px;
+  position: relative; }
+  .bar-wrap .bar-title {
+    display: inline-block;
+    margin-top: 3px; }
+  .bar-wrap .money-btn {
+    padding: 2px 6px;
+    border-radius: 10px;
+    border: 1px solid #999;
+    cursor: pointer; }
+    .bar-wrap .money-btn:active {
+      background: #999; }
+
+.main {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  height: 100%; }
+  .main .data-wrap {
+    margin: 40px auto;
+    position: relative;
+    width: 180px;
+    height: 180px; }
+    .main .data-wrap .data-item {
+      position: absolute;
+      width: 80px;
+      line-height: 1.2;
+      color: #ccc; }
+    .main .data-wrap .memory {
+      top: -40px;
+      left: 0;
+      right: 0;
+      margin: auto; }
+    .main .data-wrap .flexibility {
+      top: 40px;
+      left: -60px; }
+    .main .data-wrap .attention {
+      top: 40px;
+      right: -60px; }
+    .main .data-wrap .calculation {
+      bottom: -20px;
+      left: -30px; }
+    .main .data-wrap .speed {
+      right: -30px;
+      bottom: -20px; }
+    .main .data-wrap .canvas-wrap {
+      width: 100%;
+      height: 100%;
+      position: relative; }
+      .main .data-wrap .canvas-wrap #data-chart {
+        position: absolute;
+        top: 0;
+        left: -4px;
+        bottom: 0;
+        margin: auto; }
+  .main .sum-up-wrap {
+    color: #ccc;
+    margin: 0 auto; }
+    .main .sum-up-wrap hr {
+      width: 200px;
+      transform: scaleY(0.4); }
+    .main .sum-up-wrap .sum-up-text {
+      font-size: 16px;
+      font-weight: bold;
+      color: #fff;
+      margin: 10px 0; }
+  .main .button-wrap {
+    width: 200px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: auto;
+    bottom: 10px; }
+    .main .button-wrap button {
+      border-radius: 25px;
+      border: 1px solid #999;
+      background: transparent;
+      outline: none;
+      height: 34px;
+      margin-bottom: 8px;
+      width: 150px;
+      color: #fff;
+      cursor: pointer; }
+      .main .button-wrap button:active {
+        background: #999; }
+
+/*# sourceMappingURL=user.css.map */
