@@ -17,6 +17,11 @@ register_button.on("tap",function(){
             help_id:$(this).attr("data-id")
         },function(res){
             console.log(res);
+            if(res =="EMPTY"){
+                alert("数据不能为空");
+                self.html("请重试").removeClass("disable");
+                return;
+            }
             if(res == "1"){
                 window.location.href = "success.php";
             }else{
