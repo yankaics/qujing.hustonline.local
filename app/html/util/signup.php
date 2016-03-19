@@ -6,12 +6,9 @@
 
 	mysql_select_db("qujing", $con);
 
-	$sql="INSERT INTO baoming (name,sex,grade,phone,wechat,intro,help_id) 
-		VALUES (".$_POST['name'].",".$_POST['gender'].",".$_POST['grade'].",".$_POST['phone'].",".$_POST['wechat'].",".$_POST['intro'].",".$_POST['help_id'].")";
-		
-	
-	// echo $_POST['name'].",".$_POST['gender'].",".$_POST['grade'].",".$_POST['phone'].",".$_POST['wechat'].",".$_POST['intro'].",".$_POST['help_id'];
-		
+	$sql = "INSERT INTO baoming(name,sex,grade,phone,wechat,intro,help_id) 
+		VALUES ('$_POST[name]','$_POST[gender]','$_POST[grade]','$_POST[phone]','$_POST[wechat]','$_POST[intro]','$_POST[help_id]')";
+				
 	if (!mysql_query($sql,$con))
 	  {
 	 	echo "0";

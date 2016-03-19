@@ -21,6 +21,8 @@
             $uid = $_GET['uid'];
             $res = mysql_query("select * from helper where id =".$uid);   
             $num = mysql_num_rows($res);
+            
+            $see_num = mysql_num_rows(mysql_query("select * from baoming where help_id =".$uid));
             for($i=0;$i<$num;$i++){
                 $msg = mysql_fetch_assoc($res);
                 echo '<div class="hj-item">
@@ -34,7 +36,7 @@
                             '.$msg[skill_intro].'
                         </p>
                         <p class="hj-info clf">
-                            <span class="hj-num left">10人想见</span>
+                            <span class="hj-num left">'.$see_num.'人想见</span>
                             <span class="hj-price-wrap right">
                                 <span class="hj-price">￥'.$msg[skill_price].'</span>
                                 <span class="hj-time">/'.$msg[skill_time].'小时</span>

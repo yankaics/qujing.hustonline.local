@@ -1,0 +1,35 @@
+@import "./base";
+.main{
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  position: relative;
+  height:100%;
+  .success-panel{
+    width:80%;
+    padding-top: 80px;
+    margin: 0 auto;
+    text-align: center;
+    .success-icon{
+      width:60%;
+      margin-bottom: 40px;
+    }
+    p{
+      font-size: 14px;
+      line-height: 2;
+    }
+  }
+}
+.detail-button{
+  color: #fd728f;
+  text-decoration: underline;
+  position: absolute;
+  z-index: 2;
+  bottom:60px;
+  left:0;
+  right:0;
+  text-align: center;
+  height:30px;
+  font-size:18px;
+}
+

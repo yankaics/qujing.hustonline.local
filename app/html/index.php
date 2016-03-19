@@ -34,7 +34,7 @@
                             '.$msg[skill_intro].'
                         </p>
                         <p class="hj-info clf">
-                            <span class="hj-num left">10人见过</span>
+                            <span class="hj-num left">'.$msg[see_num].'人见过</span>
                             <span class="hj-price-wrap right">
                                 <span class="hj-price">￥'.$msg[skill_price].'</span>
                                 <span class="hj-time">/'.$msg[skill_time].'小时</span>

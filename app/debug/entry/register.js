@@ -1,7 +1,11 @@
 var register_button = $("#register-button");
 
 register_button.on("tap",function(){
-    console.log("hello");
+    var self = $(this);
+    if(self.hasClass("disable")){
+        return;
+    }
+    self.addClass("disable").html("正在报名");
     $.post("util/signup.php",
         {
             name:$("#name").val(),
@@ -14,9 +18,9 @@ register_button.on("tap",function(){
         },function(res){
             console.log(res);
             if(res == "1"){
-                console.log("报名成功");
+                window.location.href = "success.php";
             }else{
-                console.log("报名失败");
+                self.html("报名失败，请重试").removeClass("disable");
             }
         });
 });
