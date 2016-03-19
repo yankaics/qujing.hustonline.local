@@ -30,7 +30,7 @@
                             <img class="hj-avatar" src="'.$msg['avatar'].'" alt="头像"/>
                         </div>
                         <p class="head">
-                            <span class="hj-name">'.$msg['name'].'</span> <span class="hj-title">'.$msg[title].'</span>
+                            <span class="hj-name">'.$msg['name'].'</span> <span class="hj-title">'.$msg['title'].'</span>
                         </p>
                         <p class="hj-skill">
                             '.$msg['skill_intro'].'
