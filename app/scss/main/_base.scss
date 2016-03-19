@@ -1,59 +1,14 @@
 @import "./../base/base";
 body{
-  background:#1f1e1e url("/img/main/background.png") center center no-repeat;
-  background-size: cover;
-  color: #fff;
+  background:#fff;
   font-size: 12px;
   -webkit-font-smoothing: antialiased;
-  line-height:1.4;
+  line-height:1.5;
   font-family: "Helvetica neue",Helvetica,Tahoma,"PingFang SC","lantinghei sc","Microsoft Yahei", sans-serif;
 }
 html,body{
   height:100%;
-  width:100%;
 }
 .line{
   border-bottom: 1px solid #ddd;
-}
-.circle-wrap{
-  left:0;
-  right:0;
-  margin:auto;
-  top:80px;
-  width:90%;
-  max-width: 320px;
-  position: absolute;
-  z-index: -1;
-  .logo-text{
-    top:40px;
-    width:80%;
-    margin-left: 10%;
-    position: absolute;
-  }
-  .loading{
-    position: absolute;
-    width:40%;
-    margin-left: 30%;
-    bottom:30px;
-  }
-  img{
-    width:100%;
-  }
-}
-.bar-wrap{
-  padding:10px;
-  position: relative;
-  .bar-title{
-    display: inline-block;
-    margin-top:3px;
-  }
-  .money-btn{
-    padding:2px 6px;
-    border-radius:10px;
-    border:1px solid #999;
-    cursor: pointer;
-    &:active{
-      background:#999;
-    }
-  }
 }

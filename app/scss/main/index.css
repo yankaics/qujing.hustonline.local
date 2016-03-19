@@ -2,10 +2,9 @@ div, html, body, p, ul, li {
   margin: 0;
   padding: 0; }
 
-#body-pc-box {
-  margin: auto;
-  height: 568px;
-  width: 320px; }
+a {
+  text-decoration: none;
+  color: inherit; }
 
 ul {
   list-style: none; }
@@ -46,97 +45,131 @@ ul {
   opacity: 0; }
 
 body {
-  background: #1f1e1e url("/img/main/background.png") center center no-repeat;
-  background-size: cover;
-  color: #fff;
+  background: #fff;
   font-size: 12px;
   -webkit-font-smoothing: antialiased;
-  line-height: 1.4;
+  line-height: 1.5;
   font-family: "Helvetica neue",Helvetica,Tahoma,"PingFang SC","lantinghei sc","Microsoft Yahei", sans-serif; }
 
 html, body {
-  height: 100%;
-  width: 100%; }
+  height: 100%; }
 
 .line {
   border-bottom: 1px solid #ddd; }
 
-.circle-wrap {
-  left: 0;
-  right: 0;
-  margin: auto;
-  width: 90%;
-  max-width: 320px;
-  position: absolute;
-  z-index: -1; }
-  .circle-wrap .logo-text {
-    top: 40px;
-    width: 80%;
-    margin-left: 10%;
-    position: absolute; }
-  .circle-wrap .loading {
-    position: absolute;
-    width: 40%;
-    margin-left: 30%;
-    bottom: 30px; }
-  .circle-wrap img {
-    width: 100%; }
-
-.bar-wrap {
-  padding: 10px;
-  position: relative; }
-  .bar-wrap .bar-title {
-    display: inline-block;
-    margin-top: 3px; }
-  .bar-wrap .money-btn {
-    padding: 2px 6px;
-    border-radius: 10px;
-    border: 1px solid #999;
-    cursor: pointer; }
-    .bar-wrap .money-btn:active {
-      background: #999; }
-
 .main {
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
   position: relative;
   height: 100%;
-  overflow: hidden; }
-
-.main {
-  width: 100%;
-  height: 100%; }
-  .main .ability-wrap .li-wrap {
-    margin: 0 auto;
-    width: 80%;
-    list-style: none; }
-    .main .ability-wrap .li-wrap .item {
-      padding: 10px 0;
+  padding-bottom: 40px; }
+  .main .hj-list {
+    height: 100%;
+    overflow: scroll;
+    background-color: #fff;
+    -webkit-overflow-scrolling: touch; }
+    .main .hj-list::-webkit-scrollbar {
+      width: 0; }
+    .main .hj-list .hj-item {
       position: relative;
-      border-bottom: 1px solid #999; }
-      .main .ability-wrap .li-wrap .item:first-child {
-        border-top: 1px solid #999; }
-      .main .ability-wrap .li-wrap .item.active {
-        border-bottom: 1px solid #ddd; }
-      .main .ability-wrap .li-wrap .item .item-img {
-        height: 35px; }
-      .main .ability-wrap .li-wrap .item .done {
+      box-shadow: 0px 2px 4px #ddd; }
+      .main .hj-list .hj-item .hj-avatar-wrap {
+        width: 104px;
+        height: 104px;
+        background-color: #fff;
+        border-radius: 50%;
+        top: 30px;
+        left: 20px;
         position: absolute;
-        height: 25px;
-        right: 0;
-        top: 10px; }
-  .main .button-wrap {
-    width: 200px;
-    margin: 50px auto 0; }
-    .main .button-wrap button {
-      border-radius: 25px;
-      border: 1px solid #999;
-      background: transparent;
-      outline: none;
-      height: 34px;
-      margin-bottom: 8px;
-      width: 150px;
-      color: #fff;
-      cursor: pointer; }
-      .main .button-wrap button:active {
-        background: #999; }
+        box-shadow: 0px 2px 5px #ccc;
+        text-align: center; }
+        .main .hj-list .hj-item .hj-avatar-wrap .hj-avatar {
+          position: relative;
+          top: 2px;
+          width: 100px;
+          height: 100px;
+          border-radius: 50%; }
+      .main .hj-list .hj-item .head {
+        padding-left: 140px;
+        padding-top: 20px;
+        border-bottom: 1px solid #ddd; }
+        .main .hj-list .hj-item .head .hj-name {
+          font-size: 18px;
+          color: #000;
+          padding-right: 10px; }
+        .main .hj-list .hj-item .head .hj-title {
+          color: #666; }
+      .main .hj-list .hj-item .hj-skill {
+        padding-top: 10px;
+        padding-right: 10px;
+        font-size: 14px;
+        padding-left: 140px;
+        line-height: 18px;
+        height: 44px; }
+      .main .hj-list .hj-item .hj-info {
+        padding: 5px 10px 5px 140px;
+        height: 16px;
+        line-height: 16px; }
+        .main .hj-list .hj-item .hj-info span {
+          display: inline-block; }
+        .main .hj-list .hj-item .hj-info .hj-num {
+          color: #666; }
+        .main .hj-list .hj-item .hj-info .hj-price-wrap {
+          color: #fd728f; }
+        .main .hj-list .hj-item .hj-info .hj-price {
+          font-size: 16px; }
+      .main .hj-list .hj-item .hj-detail-wrap {
+        padding-right: 10px;
+        height: 30px;
+        line-height: 30px;
+        color: #666;
+        font-size: 12px; }
+  .main .intro-list {
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    height: 100%;
+    overflow: scroll;
+    background-color: #fff;
+    -webkit-overflow-scrolling: touch;
+    width: 80%;
+    padding-top: 40px;
+    margin: 0 auto; }
+    .main .intro-list::-webkit-scrollbar {
+      width: 0; }
+    .main .intro-list .intro-item {
+      margin-bottom: 26px; }
+      .main .intro-list .intro-item .intro-item-header {
+        height: 40px;
+        line-height: 40px;
+        margin-bottom: 10px; }
+        .main .intro-list .intro-item .intro-item-header img {
+          vertical-align: -8px;
+          width: 28px; }
+        .main .intro-list .intro-item .intro-item-header span {
+          padding-left: 8px;
+          font-size: 18px;
+          color: #79c985; }
+      .main .intro-list .intro-item .intro-detail {
+        font-size: 14px; }
+
+.bottom-bar {
+  background-color: #FFFFFF;
+  border-top: 1px solid #ddd;
+  position: absolute;
+  z-index: 2;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  font-size: 0; }
+  .bottom-bar .bottom-button {
+    display: inline-block;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    width: 50%; }
+    .bottom-bar .bottom-button img {
+      height: 40px;
+      vertical-align: middle; }
 
 /*# sourceMappingURL=index.css.map */

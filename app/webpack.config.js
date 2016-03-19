@@ -3,7 +3,8 @@ var path = require("path"),
 module.exports = {
     context: path.join(__dirname,"debug/entry/"),
     entry: {  //入口文件
-        index:"index.js"
+        index:"./index.js",
+        register:"./register.js"
     },
     output: {  //输出文件目录
         path: path.join(__dirname, "dist"),
