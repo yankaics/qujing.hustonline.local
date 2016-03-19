@@ -1,5 +1,5 @@
 <?php
-	$con = mysql_connect("127.0.0.1","root","mingming");
+	$con = mysql_connect("127.0.0.1","root","Hustonline87542701");
 	if(!$con){
 	  die('Could not connect: ' . mysql_error());
 	}

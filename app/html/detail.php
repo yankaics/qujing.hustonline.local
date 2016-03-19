@@ -52,11 +52,7 @@
                     
                     ';
             }
-            
         ?>
-    
-    
-    
 </div>
 <script src="/dist/lib/zepto.min.js"></script>
 <script src="/dist/index.entry.js"></script>
