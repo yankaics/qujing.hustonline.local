@@ -23,21 +23,21 @@
             $num = mysql_num_rows($res);
             for($i=0;$i<$num;$i++){
                 $msg = mysql_fetch_assoc($res);
-                echo '<a href="detail.php?uid='.$msg[id].'"><div class="hj-item">
+                echo '<a href="detail.php?uid='.$msg['id'].'"><div class="hj-item">
                         <div class="hj-avatar-wrap">
-                            <img class="hj-avatar" src="'.$msg[avatar].'" alt="头像"/>
+                            <img class="hj-avatar" src="'.$msg['avatar'].'" alt="头像"/>
                         </div>
                         <p class="head">
-                            <span class="hj-name">'.$msg[name].'</span> <span class="hj-title">'.$msg[title].'</span>
+                            <span class="hj-name">'.$msg['name'].'</span> <span class="hj-title">'.$msg[title].'</span>
                         </p>
                         <p class="hj-skill">
-                            '.$msg[skill_intro].'
+                            '.$msg['skill_intro'].'
                         </p>
                         <p class="hj-info clf">
-                            <span class="hj-num left">'.$msg[see_num].'人见过</span>
+                            <span class="hj-num left">'.$msg['see_num'].'人见过</span>
                             <span class="hj-price-wrap right">
-                                <span class="hj-price">￥'.$msg[skill_price].'</span>
-                                <span class="hj-time">/'.$msg[skill_time].'小时</span>
+                                <span class="hj-price">￥'.$msg['skill_price'].'</span>
+                                <span class="hj-time">/'.$msg['skill_time'].'小时</span>
                             </span>
                         </p>
                         <p class="hj-detail-wrap clf">
