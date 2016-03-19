@@ -30,7 +30,7 @@
                 <img src="/img/tag.png" alt="付费约见"/>
                 <span>付费约见</span>
             </div>
-            <p class="intro-detail">时间就是金钱省去人情债。</p>
+            <p class="intro-detail">时间就是金钱，省去人情债。</p>
         </div>
         <div class="intro-item">
             <div class="intro-item-header">
