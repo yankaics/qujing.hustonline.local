@@ -27,25 +27,25 @@
                 $msg = mysql_fetch_assoc($res);
                 echo '<div class="hj-item">
                         <div class="hj-avatar-wrap">
-                            <img class="hj-avatar" src="'.$msg[avatar].'" alt="头像"/>
+                            <img class="hj-avatar" src="'.$msg['avatar'].'" alt="头像"/>
                         </div>
                         <p class="head">
-                            <span class="hj-name">'.$msg[name].'</span> <span class="hj-title">'.$msg[title].'</span>
+                            <span class="hj-name">'.$msg['name'].'</span> <span class="hj-title">'.$msg[title].'</span>
                         </p>
                         <p class="hj-skill">
-                            '.$msg[skill_intro].'
+                            '.$msg['skill_intro'].'
                         </p>
                         <p class="hj-info clf">
                             <span class="hj-num left">'.$see_num.'人想见</span>
                             <span class="hj-price-wrap right">
-                                <span class="hj-price">￥'.$msg[skill_price].'</span>
-                                <span class="hj-time">/'.$msg[skill_time].'小时</span>
+                                <span class="hj-price">￥'.$msg['skill_price'].'</span>
+                                <span class="hj-time">/'.$msg['skill_time'].'小时</span>
                             </span>
                         </p>
                         <p class="hj-detail-wrap clf"> </p>
                     </div>
                     <div class="intro-content">
-                        '.$msg[skill_detail].'
+                        '.$msg['skill_detail'].'
                     </div>
                     
                     <a href="register.php?uid='.$uid.'"><div class="bottom-bar">报名约见</div></a>
