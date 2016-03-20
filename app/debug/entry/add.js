@@ -6,7 +6,7 @@ register_button.on("tap",function(){
         return;
     }
     self.addClass("disable").html("正在报名");
-    $.post("util/addHj.php",
+    $.post("util/addHJ.php",
         {
             name:$("#name").val(),
             title:$("#title").val(),
