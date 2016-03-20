@@ -4,7 +4,8 @@ module.exports = {
     context: path.join(__dirname,"debug/entry/"),
     entry: {  //入口文件
         index:"./index.js",
-        register:"./register.js"
+        register:"./register.js",
+        add:"./add.js"
     },
     output: {  //输出文件目录
         path: path.join(__dirname, "dist"),
