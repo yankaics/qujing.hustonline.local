@@ -106,7 +106,8 @@ html, body {
         font-size: 14px;
         padding-left: 140px;
         line-height: 18px;
-        height: 44px; }
+        height: 44px;
+        font-weight: bolder; }
       .main .hj-list .hj-item .hj-info {
         padding: 5px 10px 5px 140px;
         height: 16px;
