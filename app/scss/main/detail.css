@@ -70,6 +70,7 @@ html, body {
     top: 0;
     left: 0;
     right: 0;
+    z-index: 2;
     box-shadow: 0px 2px 4px #ccc; }
     .main .hj-item .hj-avatar-wrap {
       width: 104px;
