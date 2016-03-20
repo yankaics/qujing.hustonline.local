@@ -11,7 +11,8 @@ register_button.on("tap",function(){
             name:$("#name").val(),
             title:$("#title").val(),
             skill_intro:$("#skill_intro").val(),
-            skill_detail:$("#skill_detail").val(),
+            subject_intro:$("#subject_intro").val(),
+            person_intro:$("#person_intro").val(),
             skill_price:$("#skill_price").val(),
             skill_time:$("#skill_time").val(),
             see_num:$("#see_num").val(),
@@ -24,7 +25,8 @@ register_button.on("tap",function(){
                 return;
             }
             if(res == "1"){
-                window.location.href = "success.php";
+                alert("报名成功");
+                location.reload();
             }else{
                 self.html("报名失败，请重试").removeClass("disable");
             }
