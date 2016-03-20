@@ -45,7 +45,10 @@
                         <p class="hj-detail-wrap clf"> </p>
                     </div>
                     <div class="intro-content">
-                        '.$msg['skill_detail'].'
+                        <p class="detail-header">个人简介</p>
+                        <p>'.$msg['person_intro'].'</p>
+                        <p class="detail-header">主题简介</p>
+                        <p>'.$msg['subject_intro'].'</p>
                     </div>
                     
                     <a href="register.php?uid='.$uid.'"><div class="bottom-bar">报名约见</div></a>
