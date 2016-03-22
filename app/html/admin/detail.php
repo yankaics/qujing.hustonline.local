@@ -37,13 +37,8 @@
                              <span class="word">先说的话</span>'.$msg['intro'].'
                          </p>
                         </div>';
-            
-            
-               
-            
             }
             }
-     
         ?>
   </div>
 </div>
