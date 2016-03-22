@@ -26,6 +26,7 @@
             $num = mysql_num_rows($res);
             for($i=0;$i<$num;$i++){
                 $msg = mysql_fetch_assoc($res);
+                $see_num = mysql_num_rows(mysql_query("select * from baoming where help_id =".$msg["id"]));
                 echo '<a href="detail.php?uid='.$msg['id'].'"><div class="hj-item">
                         <div class="hj-avatar-wrap">
                             <img class="hj-avatar" src="'.$msg['avatar'].'" alt="头像"/>
@@ -37,7 +38,7 @@
                             '.$msg['skill_intro'].'
                         </p>
                         <p class="hj-info clf">
-                            <span class="hj-num left">'.$msg['see_num'].'人见过</span>
+                            <span class="hj-num left">'.$see_num.'人想见</span>
                             <span class="hj-price-wrap right">
                                 <span class="hj-price">￥'.$msg['skill_price'].'</span>
                                 <span class="hj-time">/'.$msg['skill_time'].'小时</span>
@@ -62,5 +63,8 @@
 </div>
 <script src="/dist/lib/zepto.min.js"></script>
 <script src="/dist/index.entry.js"></script>
+<div style="display:none">
+    <script type="text/javascript">var cnzz_protocol = (("https:" == document.location.protocol) ? " https://" : " http://");document.write(unescape("%3Cspan id='cnzz_stat_icon_1258124905'%3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "s11.cnzz.com/stat.php%3Fid%3D1258124905' type='text/javascript'%3E%3C/script%3E"));</script>
+</div>
 </body>
 </html>
