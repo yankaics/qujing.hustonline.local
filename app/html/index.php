@@ -4,7 +4,7 @@
     include "util/mysql.php";
 ?>
 <head lang="en">
-    <title>取经</title>
+    <title>取经——华科校内一对一交流平台</title>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <meta http-equiv="X-UA-Compatible" content="edge">
     <meta charset="utf-8">
@@ -14,6 +14,9 @@
     <meta content="black" name="apple-mobile-web-app-status-bar-style" />
     <meta content="telephone=no" name="format-detection" />
     <link rel="stylesheet" href="/scss/main/index.css"/>
+    <div style="display:none">
+        <img src="/img/icon.png" alt="分享图标">
+    </div>
 </head>
 <body id="body-pc-box">
 <div class="main">
