@@ -108,13 +108,9 @@ html, body {
 
 .bottom-bar {
   background-color: #22ac38;
-  position: absolute;
+  display: block;
   font-size: 14px;
   color: #fff;
-  z-index: 2;
-  bottom: 0;
-  left: 0;
-  right: 0;
   height: 50px;
   line-height: 50px;
   text-align: center; }
