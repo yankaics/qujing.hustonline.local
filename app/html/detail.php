@@ -49,8 +49,8 @@
                         <p>'.$msg['person_intro'].'</p>
                         <p class="detail-header">主题简介</p>
                         <p>'.$msg['subject_intro'].'</p>
+                        <p class="warn-word">关注公众号【华科学习帝】，查看更多主题。</p>
                     </div>
-                    
                     <a href="register.php?uid='.$uid.'"><div class="bottom-bar">报名约见</div></a>';    
         ?>
 </div>

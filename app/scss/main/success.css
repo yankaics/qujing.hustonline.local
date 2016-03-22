@@ -74,6 +74,8 @@ html, body {
     .main .success-panel p {
       font-size: 14px;
       line-height: 2; }
+      .main .success-panel p.warn-word {
+        color: #6699cc; }
 
 .detail-button {
   color: #fd728f;

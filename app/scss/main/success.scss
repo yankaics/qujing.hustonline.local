@@ -17,6 +17,9 @@
     p{
       font-size: 14px;
       line-height: 2;
+      &.warn-word{
+        color:#6699cc;
+      }
     }
   }
 }

@@ -137,6 +137,9 @@ html, body {
         font-size: 16px;
         color: #f96352;
         margin-bottom: 10px; }
+    .main .intro-content .warn-word {
+      font-size: 14px;
+      color: #6699cc; }
 
 .bottom-bar {
   background-color: #f96352;
