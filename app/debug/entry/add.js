@@ -1,5 +1,8 @@
 var register_button = $("#register-button");
 
+if(top!==self)
+    top.location.href=this.location.href;
+
 register_button.on("tap",function(){
     var self = $(this);
     if(self.hasClass("disable")){
