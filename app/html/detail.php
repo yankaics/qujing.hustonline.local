@@ -2,9 +2,13 @@
 <html>
 <?php 
     include "util/mysql.php";
+    $uid = $_GET['uid'];
+    $res = mysql_query("select * from helper where id =".$uid);   
+    $msg = mysql_fetch_assoc($res);
+    $see_num = mysql_num_rows(mysql_query("select * from baoming where help_id =".$uid));
 ?>
 <head lang="en">
-    <title>取经</title>
+    <title><?php echo "【取经】".$msg['skill_intro'].",一对一经验交流" ?></title>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <meta http-equiv="X-UA-Compatible" content="edge">
     <meta charset="utf-8">
@@ -14,18 +18,14 @@
     <meta content="black" name="apple-mobile-web-app-status-bar-style" />
     <meta content="telephone=no" name="format-detection" />
     <link rel="stylesheet" href="/scss/main/detail.css"/>
+    <div style="display:none">
+      <?php echo "<img src=".$msg['avatar']." height='302px' width='302px' alt=".$msg['name']." >"; ?>
+    </div>
 </head>
 <body id="body-pc-box">
 <div class="main">   
      <?php 
-            $uid = $_GET['uid'];
-            $res = mysql_query("select * from helper where id =".$uid);   
-            $num = mysql_num_rows($res);
-            
-            $see_num = mysql_num_rows(mysql_query("select * from baoming where help_id =".$uid));
-            for($i=0;$i<$num;$i++){
-                $msg = mysql_fetch_assoc($res);
-                echo '<div class="hj-item">
+            echo '<div class="hj-item">
                         <div class="hj-avatar-wrap">
                             <img class="hj-avatar" src="'.$msg['avatar'].'" alt="头像"/>
                         </div>
@@ -51,10 +51,7 @@
                         <p>'.$msg['subject_intro'].'</p>
                     </div>
                     
-                    <a href="register.php?uid='.$uid.'"><div class="bottom-bar">报名约见</div></a>
-                    
-                    ';
-            }
+                    <a href="register.php?uid='.$uid.'"><div class="bottom-bar">报名约见</div></a>';    
         ?>
 </div>
 <script src="/dist/lib/zepto.min.js"></script>
