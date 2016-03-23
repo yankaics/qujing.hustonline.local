@@ -127,6 +127,7 @@ html, body {
     padding: 0 30px;
     text-align: center;
     display: inline-block;
+    min-width: 100px;
     height: 40px;
     line-height: 40px; }
   .detail-li-item a {
