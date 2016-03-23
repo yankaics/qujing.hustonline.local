@@ -22,7 +22,7 @@
 <div class="main">
     <div class="hj-list">
         <?php 
-            $res = mysql_query("select * from helper");   
+            $res = mysql_query("select * from helper order by rand()");   
             $num = mysql_num_rows($res);
             for($i=0;$i<$num;$i++){
                 $msg = mysql_fetch_assoc($res);
