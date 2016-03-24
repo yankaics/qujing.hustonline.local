@@ -1,7 +1,7 @@
 <?php
 	$con = mysql_connect("localhost","root","Hustonline87542701");
     mysql_query("set names utf8");
-    if(!$con){
+	if(!$con){
 	  die('Could not connect: ' . mysql_error());
 	}
 	mysql_select_db("qujing", $con);
