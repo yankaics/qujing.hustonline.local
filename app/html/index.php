@@ -61,6 +61,7 @@
         </a>
     </div>
 </div>
+<!-- test -->
 <script src="/dist/lib/zepto.min.js"></script>
 <script src="/dist/index.entry.js"></script>
 <div style="display:none">
