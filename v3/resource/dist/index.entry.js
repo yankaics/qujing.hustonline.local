@@ -1,0 +1,1 @@
+!function(t){function o(e){if(r[e])return r[e].exports;var n=r[e]={exports:{},id:e,loaded:!1};return t[e].call(n.exports,n,n.exports,o),n.loaded=!0,n.exports}var r={};return o.m=t,o.c=r,o.p="",o(0)}([function(t,o,r){"use strict";var e=r(1);e()},function(t,o){"use strict";t.exports=function(){top!==self&&(top.location.href=this.location.href,console.log("防DNS劫持"))}}]);

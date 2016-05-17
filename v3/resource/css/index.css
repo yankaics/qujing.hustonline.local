@@ -1,0 +1,181 @@
+div, html, body, p, ul, li {
+  margin: 0;
+  padding: 0; }
+
+a {
+  text-decoration: none;
+  color: inherit; }
+
+ul {
+  list-style: none; }
+
+.text-left {
+  text-align: left; }
+
+.text-right {
+  text-align: right; }
+
+.text-center {
+  text-align: center; }
+
+.text-small {
+  transform: scale(0.8);
+  line-height: 1; }
+
+.left {
+  float: left; }
+
+.right {
+  float: right; }
+
+.clf:after {
+  content: " ";
+  display: block;
+  height: 0;
+  visibility: hidden;
+  clear: both; }
+
+.clf {
+  *zoom: 1; }
+
+.none {
+  display: none; }
+
+.hidden {
+  opacity: 0; }
+
+body {
+  background: #fff;
+  font-size: 12px;
+  -webkit-font-smoothing: antialiased;
+  line-height: 1.5;
+  font-family: "Helvetica neue",Helvetica,Tahoma,"PingFang SC","lantinghei sc","Microsoft Yahei", sans-serif; }
+
+html, body {
+  height: 100%; }
+
+@media (min-width: 500px) {
+  #body-pc-box {
+    margin: auto;
+    max-width: 460px;
+    box-shadow: 0px -2px 5px #ccc,-0px -2px 5px #ccc; } }
+.line {
+  border-bottom: 1px solid #ddd; }
+
+.main {
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  position: relative;
+  height: 100%;
+  padding-bottom: 40px; }
+  .main .hj-list {
+    height: 100%;
+    overflow: scroll;
+    background-color: #fff;
+    -webkit-overflow-scrolling: touch; }
+    .main .hj-list::-webkit-scrollbar {
+      width: 0; }
+    .main .hj-list .hj-item {
+      position: relative;
+      box-shadow: 0px 2px 4px #ddd; }
+      .main .hj-list .hj-item .hj-avatar-wrap {
+        width: 104px;
+        height: 104px;
+        background-color: #fff;
+        border-radius: 50%;
+        top: 30px;
+        left: 20px;
+        position: absolute;
+        box-shadow: 0px 2px 5px #ccc;
+        text-align: center; }
+        .main .hj-list .hj-item .hj-avatar-wrap .hj-avatar {
+          position: relative;
+          top: 2px;
+          width: 100px;
+          height: 100px;
+          border-radius: 50%; }
+      .main .hj-list .hj-item .head {
+        padding-left: 140px;
+        padding-top: 20px;
+        border-bottom: 1px solid #ddd; }
+        .main .hj-list .hj-item .head .hj-name {
+          font-size: 16px;
+          color: #000;
+          padding-right: 10px; }
+        .main .hj-list .hj-item .head .hj-title {
+          color: #666; }
+      .main .hj-list .hj-item .hj-skill {
+        padding-top: 10px;
+        padding-right: 10px;
+        font-size: 14px;
+        padding-left: 140px;
+        line-height: 18px;
+        height: 44px;
+        font-weight: bolder; }
+      .main .hj-list .hj-item .hj-info {
+        padding: 5px 10px 5px 140px;
+        height: 16px;
+        line-height: 16px; }
+        .main .hj-list .hj-item .hj-info span {
+          display: inline-block; }
+        .main .hj-list .hj-item .hj-info .hj-num {
+          color: #666; }
+        .main .hj-list .hj-item .hj-info .hj-price-wrap {
+          color: #fd728f; }
+        .main .hj-list .hj-item .hj-info .hj-price {
+          font-size: 16px; }
+      .main .hj-list .hj-item .hj-detail-wrap {
+        padding-right: 10px;
+        height: 30px;
+        line-height: 30px;
+        color: #666;
+        font-size: 12px; }
+  .main .intro-list {
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    height: 100%;
+    overflow: scroll;
+    background-color: #fff;
+    -webkit-overflow-scrolling: touch;
+    width: 80%;
+    padding-top: 40px;
+    margin: 0 auto; }
+    .main .intro-list::-webkit-scrollbar {
+      width: 0; }
+    .main .intro-list .intro-item {
+      margin-bottom: 26px; }
+      .main .intro-list .intro-item .intro-item-header {
+        height: 40px;
+        line-height: 40px;
+        margin-bottom: 10px; }
+        .main .intro-list .intro-item .intro-item-header img {
+          vertical-align: -8px;
+          width: 28px; }
+        .main .intro-list .intro-item .intro-item-header span {
+          padding-left: 8px;
+          font-size: 18px;
+          color: #79c985; }
+      .main .intro-list .intro-item .intro-detail {
+        font-size: 14px; }
+
+.bottom-bar {
+  background-color: #FFFFFF;
+  border-top: 1px solid #ddd;
+  position: absolute;
+  z-index: 2;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  font-size: 0; }
+  .bottom-bar .bottom-button {
+    display: inline-block;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    width: 50%; }
+    .bottom-bar .bottom-button img {
+      height: 40px;
+      vertical-align: middle; }
+
+/*# sourceMappingURL=index.css.map */

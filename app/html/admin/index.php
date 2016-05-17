@@ -29,7 +29,7 @@
                         
                 echo '<span  class="see_num">'.$see_num.'</span>';
                         
-                echo'   <span  class="price">￥'.$msg['skill_price'].'元/'.$msg['skill_time'].'小时</span>
+                echo'<span  class="price">￥'.$msg['skill_price'].'元/'.$msg['skill_time'].'小时</span>
                         <a href="detail.php?uid='.$msg['id'].'" class="right">详情</a>
                     </div>';
                 }
