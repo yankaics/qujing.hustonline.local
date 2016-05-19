@@ -51,3 +51,4 @@ class M_helper extends CI_Model
         $this->db->update('helper', $update);
     }
 }
+

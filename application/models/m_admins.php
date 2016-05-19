@@ -25,3 +25,5 @@ class M_admins extends CI_Model
         return $this->db->get()->row_array();
     }
 }
+
+

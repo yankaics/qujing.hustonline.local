@@ -46,3 +46,4 @@ class M_baoming extends CI_Model
         $this->db->update('baoming', $update);
     }
 }
+
