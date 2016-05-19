@@ -8,7 +8,7 @@
 
 if ( ! defined('BASEPATH')) exit('No direct script access allowed');
 
-class M_Baoming extends CI_Model
+class M_baoming extends CI_Model
 {
     public function __construct()
     {
