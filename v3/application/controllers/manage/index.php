@@ -7,7 +7,7 @@
  */
 
 if (!defined('BASEPATH')) exit('No direct script access allowed');
-require_once(APPPATH.'controllers/manage/manage_base.php');
+require_once(APPPATH.'controllers/manage/Manage_Base.php');
 
 class Index extends Manage_Base
 {
