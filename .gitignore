@@ -10,4 +10,5 @@ node_modules
 .idea
 
 # 本地环境跟服务器环境不同
-# index.php
+index.php
+application/config/database.php
