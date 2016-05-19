@@ -94,5 +94,5 @@ class Index extends MY_Index
                 array('id' => $id)
             );
     }
-    
 }
+

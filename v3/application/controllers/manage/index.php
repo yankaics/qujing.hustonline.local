@@ -96,5 +96,5 @@ class Index extends Manage_Base
 
         $this->_data['baoming_list'] = $this->m_baoming->getsByHelpId($id);
     }
-
 }
+

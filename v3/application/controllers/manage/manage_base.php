@@ -26,3 +26,4 @@ class Manage_Base extends MY_Index
         }
     }
 }
+
