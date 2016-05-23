@@ -45,7 +45,6 @@
                     console.log('出错了');
                 }
             });
-
             wx.ready(function () {
                 // 在这里调用 API
                 wx.onMenuShareTimeline({
@@ -63,7 +62,6 @@
                 });
             });
         </script>
-
         {foreach from=$js_list item=js}
             <script src="/resource/dist/{$js}"></script>
         {/foreach}
