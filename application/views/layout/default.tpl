@@ -25,43 +25,7 @@
 
         <script src="/resource/dist/lib/zepto.min.js"></script>
         <script src="http://res.wx.qq.com/open/js/jweixin-1.0.0.js"></script>
-        <script>
-            $.ajax({
-                url :  'http://weixin.hustonline.net/jsapi',
-                type: 'POST',
-                data: {url:location.href},
-                success: function( data ) {
-                    data = $.parseJSON(data);
-                    wx.config({
-                        debug: true,
-                        appId: data.appId,
-                        timestamp: data.timestamp,
-                        nonceStr: data.nonceStr,
-                        signature: data.signature,
-                        jsApiList: ['onMenuShareTimeline']
-                    });
-                },
-                error:function(data){
-                    console.log('出错了');
-                }
-            });
-            wx.ready(function () {
-                // 在这里调用 API
-                wx.onMenuShareTimeline({
-                    title: '测试', // 分享标题
-                    link: 'http://www.baidu.com', // 分享链接
-                    imgUrl: 'http://love.yishun.co/img/logo.png', // 分享图标
-                    success: function () {
-                        // 用户确认分享后执行的回调函数
-                        console.log('成功');
-                    },
-                    cancel: function () {
-                        // 用户取消分享后执行的回调函数
-                        console.log('取消');
-                    }
-                });
-            });
-        </script>
+        <script src="/resource/test.js"></script>
         {foreach from=$js_list item=js}
             <script src="/resource/dist/{$js}"></script>
         {/foreach}

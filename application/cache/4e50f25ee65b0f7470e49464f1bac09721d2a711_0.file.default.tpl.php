@@ -1,17 +1,17 @@
 <?php
-/* Smarty version 3.1.29, created on 2016-05-19 14:42:37
+/* Smarty version 3.1.29, created on 2016-05-24 02:18:46
   from "/usr/local/var/www/qujing.hustonline.local/application/views/layout/default.tpl" */
 
 if ($_smarty_tpl->smarty->ext->_validateCompiled->decodeProperties($_smarty_tpl, array (
   'has_nocache_code' => false,
   'version' => '3.1.29',
-  'unifunc' => 'content_573d605d3aadc2_27655043',
+  'unifunc' => 'content_57434986c84689_53337377',
   'file_dependency' => 
   array (
     '4e50f25ee65b0f7470e49464f1bac09721d2a711' => 
     array (
       0 => '/usr/local/var/www/qujing.hustonline.local/application/views/layout/default.tpl',
-      1 => 1463471416,
+      1 => 1464027518,
       2 => 'file',
     ),
   ),
@@ -19,7 +19,7 @@ if ($_smarty_tpl->smarty->ext->_validateCompiled->decodeProperties($_smarty_tpl,
   array (
   ),
 ),false)) {
-function content_573d605d3aadc2_27655043 ($_smarty_tpl) {
+function content_57434986c84689_53337377 ($_smarty_tpl) {
 ?>
 <!DOCTYPE html>
 <html>
@@ -69,7 +69,12 @@ $_smarty_tpl->tpl_vars['css'] = $__foreach_css_0_saved_item;
         <?php echo '<script'; ?>
  src="/resource/dist/lib/zepto.min.js"><?php echo '</script'; ?>
 >
-
+        <?php echo '<script'; ?>
+ src="http://res.wx.qq.com/open/js/jweixin-1.0.0.js"><?php echo '</script'; ?>
+>
+        <?php echo '<script'; ?>
+ src="/resource/test.js"><?php echo '</script'; ?>
+>
         <?php
 $_from = $_smarty_tpl->tpl_vars['js_list']->value;
 if (!is_array($_from) && !is_object($_from)) {
