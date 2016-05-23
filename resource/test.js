@@ -33,6 +33,9 @@ wx.ready(function () {
         cancel: function () {
             // 用户取消分享后执行的回调函数
             console.log('取消');
+        },
+        xhrFields: {
+            withCredentials: true
         }
     });
 });
