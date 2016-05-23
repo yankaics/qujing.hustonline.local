@@ -23,7 +23,6 @@
         {include file="$CONTENT"}
         <script src="/resource/dist/lib/zepto.min.js"></script>
         <script src="http://res.wx.qq.com/open/js/jweixin-1.0.0.js"></script>
-        <script src="/resource/test.js"></script>
         {foreach from=$js_list item=js}
             <script src="/resource/dist/{$js}"></script>
         {/foreach}
