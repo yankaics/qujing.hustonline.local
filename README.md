@@ -152,11 +152,84 @@
          }        
 }
 ```
-
-
-
-
-
+##成为行家
+###7.认证成为行家的接口
+```javascript
+{
+  Method: POST/GET,
+  url   : "/assign",
+  data  :{
+            person_id:"", //用户id
+            name:"", //用户真实姓名
+            pic:"", //用户真实头像
+            title:"", //用户头衔
+            intro:"", //用户自我介绍
+            picAssign:"", //用于判断用户是否可以成为行家的照片
+          } 
+  result:{
+            isError:0/1,
+            msg    :"后台提供的信息提示", 
+            data   :{} 
+         }        
+}
+```
+##个人中心
+###8.编辑个人信息的接口
+```javascript
+{
+  Method: POST/GET,
+  url   : "/edit",
+  data  :{
+            person_id:"", //用户id
+            nickname:"",//用户昵称
+            avatar:"",//有户头像
+          } 
+  result:{
+            isError:0/1,
+            msg    :"后台提供的信息提示", 
+            data   :{} 
+         }        
+}
+```
+###9.用户身份认证的接口
+```javascript
+{
+  Method: POST/GET,
+  url   : "/user_assign",
+  data  :{
+            person_id:"", //用户id
+            name:"",//用户真实姓名
+            pic:"",//有户真实头像
+            assign_pic:"",//验证用户身份的照片
+          } 
+  result:{
+            isError:0/1,
+            msg    :"后台提供的信息提示", 
+            data   :{} 
+         }        
+}
+```
+##发布技能
+###10.发布技能的接口
+```javascript
+{
+  Method: POST/GET,
+  url   : "/release",
+  data  :{
+            person_id:"", //用户id
+            title:"",//技能描述
+            type:"",//技能类型
+            price:"",//技能价格
+            content:"",//技能内容
+            Certification:"",//验证技能的照片
+          } 
+  result:{
+            isError:0/1,
+            msg    :"后台提供的信息提示", 
+            data   :{} 
+         }        
+}
+```
 
 
 
